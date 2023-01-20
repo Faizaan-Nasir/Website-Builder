@@ -4,7 +4,7 @@
 ![image](https://user-images.githubusercontent.com/82143161/213654864-bf17d014-deec-4892-af97-d999de4df968.png)
 
 ## Purpose of this program:
-Have no idea how to create a website? Are you a developer though cannot find time to create a website of your own for a very small project? 
+Have no idea how to create a website? Are you a developer though cannot find time to create a static website of your own for a very small project? 
 Do not worry, this program has got you covered. Create a website in less than 5 minutes using this python program. All you need to do is answer a couple of questions after which your website will be created locally ready to be deployed over the internet.
 
 ## How to use this program?
@@ -31,4 +31,6 @@ _**For non-developers, you may install Thonny from https://thonny.org/ and you s
 - Add images for individual subheadings,
 - Edit any other pages but index.html,
 - Add a footer,
+- Create a dynamic website,
 - Update the webpage without completely deleting it first.
+#### Please be adviced that JavaScript support has not yet been added to this program. 
