@@ -20,3 +20,15 @@ _**For non-developers, you may install Thonny from https://thonny.org/ and you s
 - In questions that have options, enter the option letter to letter otherwise this script will not work.
 - Do not leave unnecessary spaces in headings as this may affect the indentation or alignment of the headings.
 - In case you aren't satisfied with the outcome and would like to change things a little bit you may run the program all over again till you get your desired outcome. 
+
+## Version info:
+### This is the first version of this program. It can:
+- Insert and image,
+- Insert a navbar of your choice,
+- Insert the title, text, headings and subheadings of your choice,
+- All without a watermark.
+### It cannot:
+- Add images for individual subheadings,
+- Edit any other pages but index.html,
+- Add a footer,
+- Update the webpage without completely deleting it first.
