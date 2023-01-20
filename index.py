@@ -17,11 +17,12 @@ stylesheet=open('./css/style.txt','w')
 title=input("Enter the title for your website: ")
 heading=input("Enter the main heading for your website: ")
 design_ques=input("Would you like to change the looks of your heading? (yes/no): ")
+margin_heading='0'
+align_heading='left'
+main_heading_size='10'
 if design_ques=='yes':
     main_heading_size=input("What font size would you like for your heading? (in px): ")
     align_heading_ques=input("Would you like to align your text or indent it? (indent/align): ")
-    margin_heading='0'
-    align_heading='left'
     if align_heading_ques=='indent':
         margin_heading=input("Enter left padding (in px): ")
     elif align_heading_ques=='align':
@@ -38,13 +39,17 @@ if main_img_opt=='yes':
 #inputing choices (content)
 subheading_add='yes'
 main_content=''
+margin_subheading='0'
+align_subheading='left'
+margin_content='0'
+align_content='left'
+subheading_size='10'
+content_size='10'
 print("You will now be asked a series of questions for the subheadings on your webpage.")
 subheading_design_choice=input("Would you like to edit the style of your subheadings? (yes/no): ")
 if subheading_design_choice=='yes':
     subheading_size=input("What font size would you like for your subheading? (in px): ")
     align_subheading_ques=input("Would you like to align your text or indent it? (indent/align): ")
-    margin_subheading='0'
-    align_subheading='left'
     if align_subheading_ques=='indent':
         margin_subheading=input("Enter left padding (in px): ")
     elif align_subheading_ques=='align':
@@ -53,8 +58,6 @@ content_design_choice=input("Would you like to edit the style of your content th
 if content_design_choice=='yes':
     content_size=input("What font size would you like for your content? (in px): ")
     align_content_ques=input("Would you like to align your text or indent it? (indent/align): ")
-    margin_content='0'
-    align_content='left'
     if align_content_ques=='indent':
         margin_content=input("Enter left padding (in px): ")
     elif align_content_ques=='align':
@@ -149,3 +152,5 @@ website_ext.rename(website_ext.with_suffix('.html'))
 stylesheet_ext = Path('./css/style.txt')
 stylesheet_ext.rename(stylesheet_ext.with_suffix('.css'))
 print('''Your webpage has been created successfully, navigate to the location on your drive where you have downloaded this zip file and click on index.html to view the site!''')
+print("--------------------",O2,"--------------------")
+import page2
