@@ -23,7 +23,7 @@ _**For non-developers, you may install Thonny from https://thonny.org/ and you s
 
 ## Version info:
 ### This is the first version of this program. It can:
-- Insert and image,
+- Insert an image,
 - Insert a navbar of your choice,
 - Insert the title, text, headings and subheadings of your choice,
 - All without a watermark.
