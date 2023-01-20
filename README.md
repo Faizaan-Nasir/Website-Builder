@@ -34,3 +34,8 @@ _**For non-developers, you may install Thonny from https://thonny.org/ and you s
 - Create a dynamic website,
 - Update the webpage without completely deleting it first.
 #### Please be adviced that JavaScript support has not yet been added to this program. 
+
+## Insight for Developers:
+- This program comes installed with some basic structure of the html page,
+- It also comes installed with pre-existing outlines for additional and essential parts of the page such as a navbar and a footer,
+- The user may choose which type of navbar or footer they'd like for their page and the website will employ that particular type for the current page.
