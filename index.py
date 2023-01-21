@@ -1,156 +1,97 @@
-#creating a website using python
 from pathlib import Path
 import os
+import index_2
 
-#removing files if they exist (currently only for developers)
-main_file='index.html'
-css_file='./css/style.css'
-if os.path.isfile(main_file):
-    os.remove(main_file)
-if os.path.isfile(css_file):
-    os.remove(css_file)
+O2=index_2.O2
+O3=index_2.O3
+O4=index_2.O4
+navbar=index_2.navbar
+extra_css=index_2.extra_css
+title2=O2
+heading2=O2
+margin_heading2=index_2.margin_heading
+align_heading2=index_2.align_heading
+main_heading_size2=index_2.main_heading_size
+
+second_file='page2.html'
+css2_file='./css/style2.css'
+if os.path.isfile(second_file):
+    os.remove(second_file)
+if os.path.isfile(css2_file):
+    os.remove(css2_file)
     print("Pre-existing file(s) has been removed.")
-website=open('index.txt','w')
-stylesheet=open('./css/style.txt','w')
+website2=open('page2.txt','w')
+stylesheet2=open('./css/style2.txt','w')
 
-#inputing choices (main outline)
-title=input("Enter the title for your website: ")
-heading=input("Enter the main heading for your website: ")
-design_ques=input("Would you like to change the looks of your heading? (yes/no): ")
-margin_heading='0'
-align_heading='left'
-main_heading_size='10'
-if design_ques=='yes':
-    main_heading_size=input("What font size would you like for your heading? (in px): ")
-    align_heading_ques=input("Would you like to align your text or indent it? (indent/align): ")
-    if align_heading_ques=='indent':
-        margin_heading=input("Enter left padding (in px): ")
-    elif align_heading_ques=='align':
-        align_heading=input("Horizontally align the heading (left/right/center/justify): ")
-
-#add an image
-extra_html=''
-main_img_opt=input("Would you like to add a main image to your website? (yes/no): ")
-if main_img_opt=='yes':
-    main_img=input("Enter the link for the main image: ")
-    extra_html='''<div style='text-align:center;'><img src= "'''+main_img+'''
+extra_html2=''
+main_img_opt2=input("Would you like to add a main image to your website? (yes/no): ")
+if main_img_opt2=='yes':
+    main_img2=input("Enter the link for the main image: ")
+    extra_html2='''<div style='text-align:center;'><img src= "'''+main_img2+'''
 "  class="main-img"></div>'''
-    
-#inputing choices (content)
-subheading_add='yes'
-main_content=''
-margin_subheading='0'
-align_subheading='left'
-margin_content='0'
-align_content='left'
-subheading_size='10'
-content_size='10'
-print("You will now be asked a series of questions for the subheadings on your webpage.")
-subheading_design_choice=input("Would you like to edit the style of your subheadings? (yes/no): ")
-if subheading_design_choice=='yes':
-    subheading_size=input("What font size would you like for your subheading? (in px): ")
-    align_subheading_ques=input("Would you like to align your text or indent it? (indent/align): ")
-    if align_subheading_ques=='indent':
-        margin_subheading=input("Enter left padding (in px): ")
-    elif align_subheading_ques=='align':
-        align_subheading=input("Horizontally align the subheading (left/right/center/justify): ")
-content_design_choice=input("Would you like to edit the style of your content that falls under the subheadings? (yes/no): ")
-if content_design_choice=='yes':
-    content_size=input("What font size would you like for your content? (in px): ")
-    align_content_ques=input("Would you like to align your text or indent it? (indent/align): ")
-    if align_content_ques=='indent':
-        margin_content=input("Enter left padding (in px): ")
-    elif align_content_ques=='align':
-        align_content=input("Horizontally align the content (left/right/center/justify): ")
-while subheading_add=='yes':
-    subheading_img_opt=input("Would you like to add an image under this subheading? (yes/no): ")
-    subheading=input("Enter your subheading: ")
-    content=input("Enter the content you'd like to have under this subheading?: ")
-    main_content+='''<h2 class="subheading">'''+subheading+'''</h2>
-<div class="content">
-    '''+content+'''
-</div>'''
-    subheading_add=input("Would you like to add another subheading? (yes/no): ")
 
-#navbar questions and adding a navbar
-navbar_ques=input("Would you like to add a side navbar or a top navbar? (side/top): ")
-if navbar_ques=='side':
-    navbar_doc=open('./library/side-navbar.txt','r')
-    extra_css='<link rel="stylesheet" href="./library/side-navbar.css">'
-elif navbar_ques=='top':
-    navbar_doc=open('./library/top-navbar.txt','r')
-    extra_css='<link rel="stylesheet" href="./library/top-navbar.css">'
-O2=input("Enter the title of page 2 on navbar (page 1 is home): ")
-O3=input("Enter the title of page 3 on navbar (page 1 is home): ")
-O4=input("Enter the title of page 4 on navbar (page 1 is home): ")
-navbar=navbar_doc.read()
+purpose=input("What would you like to do with this page? (display products/create a checklist/none): ")
+extra_feature=str()
+if purpose=="display products":
+    display_prod_opt="yes"
+    extra_css+='<link rel="stylesheet" href="./library/products.css">'
+    while display_prod_opt=="yes":
+        prod_img=input("Enter link to image of product: ")
+        prod_head=input("Enter the product name: ")
+        prod_des=input("Enter the product description: ")
+        display_prod_opt=input("Would you like to add another product? (yes/no): ")
+        extra_feature+=str('''<div class="container">
+  <img src="'''+prod_img+'''
+" alt="product image" class="image">
+  <div class="overlay">
+    <div class="text">
+    <h2>'''+prod_head+'''</h2>
+    '''+prod_des+'''
+    </div>
+  </div>
+</div>''')
 
-#everything combines here
-stylesheet_content='''.main-heading{
-    font-size: '''+main_heading_size+'''px;
-    padding-left: '''+margin_heading+'''px;
-    text-align: '''+align_heading+''';
+stylesheet_content2='''.main-heading{
+    font-size: '''+main_heading_size2+'''px;
+    padding-left: '''+margin_heading2+'''px;
+    text-align: '''+align_heading2+''';
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.subheading {
-    font-size: '''+subheading_size+'''px;
-    padding-left: '''+margin_subheading+'''px;
-    text-align: '''+align_subheading+''';
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.content {
-    font-size: '''+content_size+'''px;
-    padding-left: '''+margin_content+'''px;
-    padding-right: '''+margin_content+'''px;
-    text-align: '''+align_content+''';
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.main-img{
-    border-radius:20px;
-    margin-top:40px;
-}
-
-body {
-    background-color: aliceblue;
 }
 '''
-html_content='''<!DOCTYPE html>
+
+html_content2='''<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>'''+title+'''</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>'''+title2+'''</title>
+    <link rel="stylesheet" href="./css/style2.css">
     '''+extra_css+'''
 </head>
 <body>
     <ul>
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href='page2.html'>'''+O2+'''</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href='page2.html'>'''+O2+'''</a></li>
         <li><a href='page3.html'>'''+O3+'''</a></li>
         <li><a href='page4.html'>'''+O4+'''</a></li>
     </ul>
     '''+navbar+'''
-    '''+extra_html+'''
-    <h1 class="main-heading">'''+heading+'''</h1>
-    '''+main_content+'''
+    '''+extra_html2+'''
+    <h1 class="main-heading">'''+heading2+'''</h1>
+    <div class="main-container">
+    '''+extra_feature+'''
+    </div>
     </div>
 </body>
 </html>'''
 
-#everything gets written into the documents here (prog. will create one if it doesn't exists)
-website.write(html_content)
-website.close()
-stylesheet.write(stylesheet_content)
-stylesheet.close()
-website_ext = Path('index.txt')
-website_ext.rename(website_ext.with_suffix('.html'))
-stylesheet_ext = Path('./css/style.txt')
-stylesheet_ext.rename(stylesheet_ext.with_suffix('.css'))
-print('''Your webpage has been created successfully, navigate to the location on your drive where you have downloaded this zip file and click on index.html to view the site!''')
-print("--------------------",O2,"--------------------")
-import page2
+website2.write(html_content2)
+website2.close()
+stylesheet2.write(stylesheet_content2)
+stylesheet2.close()
+website_ext2 = Path('page2.txt')
+website_ext2.rename(website_ext2.with_suffix('.html'))
+stylesheet_ext2 = Path('./css/style2.txt')
+stylesheet_ext2.rename(stylesheet_ext2.with_suffix('.css'))
+print('''---------- WEBSITE CREATED (LOCATE INDEX.HTML IN DOWNLOADED FOLDER) ----------''')
