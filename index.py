@@ -2,6 +2,7 @@ from pathlib import Path
 import os
 import index_2
 
+footer=index_2.footer
 O2=index_2.O2
 O3=index_2.O3
 O4=index_2.O4

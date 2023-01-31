@@ -22,15 +22,15 @@ _**For non-developers, you may install Thonny from https://thonny.org/ and you s
 - In case you aren't satisfied with the outcome and would like to change things a little bit you may run the program all over again till you get your desired outcome. 
 
 ## Version info:
-### This is version 1.101 of this program. It can:
+### This is version 1.200 of this program. It can:
 - Insert an image,
 - Insert a navbar of your choice,
+- Insert a footer,
 - Insert the title, text, headings and subheadings of your choice,
 - All without a watermark.
 ### It cannot:
 - Add images for individual subheadings,
 - Edit any other pages but index.html and page2.html,
-- Add a footer,
 - Create a dynamic website,
 - Update the webpage without completely deleting it first.
 #### Please be adviced that JavaScript support has not yet been added to this program. 
@@ -38,11 +38,12 @@ _**For non-developers, you may install Thonny from https://thonny.org/ and you s
 - (v1.100) Bug Fixes: When the user opts not to change the style of the visible text (the program no longer throws an error).
 - (v1.100) Added a script for constructing second page of the website.
 - (v1.101) Bug Fixes: The program asks lesser questions now.
-### What is to be expected in the next update (1.11):
+- (v1.200) Feature Update: Added Graphical User Interface for the first page (main page of the website). 
+### What is to be expected in the next update (1.21):
 - Additional functionality to the second page (the remaining pages will have exactly the same script running for different pages) of the website. (expected completion version: 1.3)
-- Towards **completing** the functionality of index.py script. (expected completion version: 1.2)
+- Towards **completing** the functionality of index.py script. (expected completion version: 1.3)
 
 ## Insight for Developers:
 - This program comes installed with some basic structure of the html page,
 - It also comes installed with pre-existing outlines for additional and essential parts of the page such as a navbar and a footer,
-- The user may choose which type of navbar or footer they'd like for their page and the website will employ that particular type for the current page.
+- The user may choose which type of navbar they'd like for their page and the website will employ that particular type for the current page.

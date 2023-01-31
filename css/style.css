@@ -1,0 +1,56 @@
+.main-heading{
+    font-size: 40px;
+    padding-left: 0px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.subheading {
+    font-size: 30px;
+    padding-left: 20px;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.content {
+    font-size: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-img{
+    border-radius:20px;
+    margin-top:40px;
+}
+
+.footer-links{
+    text-decoration: none;
+    vertical-align: middle;
+    margin-left: 50px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+footer{
+    background-color: rgb(52, 52, 52);
+    height: 180px;
+    margin-top: 30px;
+    position: relative;
+}
+
+body {
+    background-color: aliceblue;
+}
