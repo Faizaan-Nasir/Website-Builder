@@ -4,7 +4,7 @@
 ![image](https://user-images.githubusercontent.com/82143161/213654864-bf17d014-deec-4892-af97-d999de4df968.png)
 
 ## Purpose of this program:
-Have no idea how to create a website? Are you a developer though cannot find time to create a static website of your own for a very small project? 
+Have no idea how to create a website? Are you a developer, though cannot find time to create a static website of your own for a very small project? 
 Do not worry, this program has got you covered. Create a website in less than 5 minutes using this python program. All you need to do is answer a couple of questions after which your website will be created locally ready to be deployed over the internet.
 
 ## How to use this program?
