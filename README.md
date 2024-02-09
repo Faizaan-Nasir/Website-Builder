@@ -1,5 +1,5 @@
 # Website-Constructor
-
+## Temporarily Paused (likely shifting to PyQt5)
 ## Sample of the website created using this program:
 ![image](https://user-images.githubusercontent.com/82143161/213654864-bf17d014-deec-4892-af97-d999de4df968.png)
 
